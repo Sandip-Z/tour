@@ -7,6 +7,11 @@ window.onscroll = function (e) {
     nav.style.backgroundColor = "transparent";
     nav.classList.remove("shadow");
   }
+  //   if (window.pageYOffset >= document.getElementById("timeline").offsetTop) {
+  //     document.getElementById("timeline").style.position = "absolute";
+  //   } else {
+  //     document.getElementById("timeline").style.position = "relative";
+  //   }
 };
 
 const galleryMenu = document.querySelectorAll(".gallery-menu-list");
