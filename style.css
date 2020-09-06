@@ -10,17 +10,19 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: transparent;
+  background-color: dimgrey, transparent;
   align-items: center;
   padding: 15px;
-  position: absolute;
+  position: fixed;
   top: 0px;
   width: 100%;
+  color: ghostwhite;
+  z-index: 100;
 }
 
-.nav-logo {
-  /* padding-top: 20px; */
-}
+/* .nav-logo {
+   padding-top: 20px;
+}*/
 
 nav ul {
   display: flex;
@@ -32,7 +34,7 @@ nav ul li {
   margin: auto;
 }
 
-.btn {
+.btn-custom {
   padding: 7px 20px;
   border-radius: 5px;
   border: 0px;
@@ -43,8 +45,8 @@ nav ul li {
 }
 
 header {
-  background-image: url("./images/header.jpg");
-  background-position: bottom;
+  background-image: url("./images/header2.jpg");
+  background-position: center;
   background-size: cover;
   height: 80vh;
   position: relative;
@@ -54,25 +56,32 @@ header {
   position: absolute;
   top: 30%;
   padding: 0px 35px;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 .header-content h1 {
   font-size: 50px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   text-transform: uppercase;
+  color: snow;
 }
 
 #motivation {
   margin: 50px;
 }
 
+#motivation h1 {
+  text-transform: uppercase;
+}
+
 #motivation p {
   padding-top: 20px;
   max-width: 50%;
+  text-align: justify;
 }
 
 #gallery {
+  margin-bottom: 50px;
 }
 
 #gallery ul {
@@ -87,29 +96,59 @@ header {
   font-weight: lighter;
 }
 
+#gallery ul li.active {
+  font-weight: bold;
+  border-bottom: 1px dashed burlywood;
+}
+
 #gallery img {
   /* width: 350px; */
   width: 100%;
-  height: auto;
+  max-height: 300px;
 }
 
-.row {
+/* .col {
+   overflow: hidden;
+} */
+
+/* .row {
   max-width: 1140px;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: red;
 }
 
 .row:not(:last-child) {
   margin-bottom: 80px;
 }
 
-.row .col-3 {
-  width: calc((100% - 60px) / 5);
-  float: left;
+.row .col {
+  max-width: calc((100% - 60px) / 4.5);
+  overflow: hidden;
   background-color: orangered;
 }
 
-.row .col-3:not(:last-child) {
-  margin-right: 60px;
+.row .col-2 {
+  max-width: calc((100% - 60px / 2)) !important;
+  overflow: hidden;
 }
 
+.row .col:not(:last-child) {
+  margin-right: 60px;
+  background-color: green;
+} */
+
 /* vertical : 8 hori : 6*/
+
+#timeline {
+  height: 100vh;
+  padding: 90px;
+  background-color: ghostwhite;
+}
+
+.img-timeline {
+  width: 75%;
+  overflow: hidden;
+  height: auto;
+}

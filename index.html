@@ -3,16 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
     <title>My Tours</title>
   </head>
   <body>
     <header>
       <div class="header-content">
-        <h1>Dargeeling</h1>
+        <h1>Nagarkot</h1>
         <div>
-          <button class="btn">Join Us</button>
-          <button class="btn">Watch Video</button>
+          <button class="btn-custom">Join Us</button>
+          <button class="btn-custom">Watch Video</button>
         </div>
       </div>
     </header>
@@ -31,7 +37,7 @@
         <ul>
           <li>Why us</li>
           <li>FAQs</li>
-          <li><button class="btn">Join Us</button></li>
+          <li><button class="btn-custom">Join Us</button></li>
         </ul>
       </div>
     </nav>
@@ -47,21 +53,38 @@
       <ul>
         <li>Darjeeling</li>
         <li>Sikkim</li>
-        <li>Ghandruk</li>
+        <li class="active">Ghandruk</li>
         <li>Pokhara</li>
       </ul>
       <div class="row">
-        <div class="col-3">
+        <div class="col-lg-3">
           <img src="images/ishan-single2.jpg" />
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <img src="images/aayush-single.jpg" />
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <img src="images/sagar-single.jpg" />
         </div>
-        <div class="col-3">
+        <div class="col-lg-3">
           <img src="images/deep-single.jpg" />
+        </div>
+      </div>
+    </div>
+    <div id="timeline">
+      <div class="row">
+        <div class="col-lg-8">
+          <img
+            src="images/donkeys.jpg"
+            class="img img-responsive img-timeline"
+          />
+        </div>
+        <div class="col-lg-4">
+          <ul>
+            <li>Breakfast</li>
+            <li>Treaking</li>
+            <li>Nightout</li>
+          </ul>
         </div>
       </div>
     </div>
