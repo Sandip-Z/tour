@@ -38,6 +38,10 @@ nav ul li {
   border: 0px;
 }
 
+.container {
+  padding: 10px 35px;
+}
+
 header {
   background-image: url("./images/header.jpg");
   background-position: bottom;
@@ -67,3 +71,45 @@ header {
   padding-top: 20px;
   max-width: 50%;
 }
+
+#gallery {
+}
+
+#gallery ul {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+#gallery ul li {
+  list-style: none;
+  padding: 0px 15px;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+#gallery img {
+  /* width: 350px; */
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.row .col-3 {
+  width: calc((100% - 60px) / 5);
+  float: left;
+  background-color: orangered;
+}
+
+.row .col-3:not(:last-child) {
+  margin-right: 60px;
+}
+
+/* vertical : 8 hori : 6*/
