@@ -6,3 +6,13 @@ window.onscroll = function (e) {
     nav.style.backgroundColor = "transparent";
   }
 };
+
+const galleryMenu = document.querySelectorAll(".gallery-menu-list");
+galleryMenu.forEach((list) => {
+  list.onclick = (e) => {
+    galleryMenu.forEach((node) => {
+      node.classList.remove("active");
+    });
+    list.classList.add("active");
+  };
+});
