@@ -112,6 +112,16 @@ header {
   max-height: 300px;
 }
 
+.gallery-img {
+  transition: all 0.7s;
+}
+
+.gallery-img:hover {
+  transform: scale(1.2);
+  transition: all 0.7s;
+  /* transform: rotateX(10deg); */
+}
+
 /* .col {
    overflow: hidden;
 } */
