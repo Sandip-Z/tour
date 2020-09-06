@@ -10,7 +10,7 @@ body {
 nav {
   display: flex;
   justify-content: space-around;
-  background-color: dimgrey, transparent;
+  background-color: dimgrey;
   align-items: center;
   padding: 15px;
   position: fixed;
@@ -151,4 +151,12 @@ header {
   width: 75%;
   overflow: hidden;
   height: auto;
+}
+
+#timeline ul li {
+  margin-top: 15px;
+}
+
+#timeline ul li:not(:first-child) {
+  margin-top: 50px;
 }
