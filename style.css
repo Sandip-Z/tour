@@ -13,6 +13,7 @@ nav {
   align-items: center;
   padding: 15px;
   position: absolute;
+  top: 0px;
   width: 100%;
 }
 
@@ -37,7 +38,22 @@ nav ul li {
 }
 
 header {
-  background-image: url("/images/header.jpg");
-  background-position: top;
+  background-image: url("./images/header.jpg");
+  background-position: bottom;
   background-size: cover;
+  height: 80vh;
+  position: relative;
+}
+
+.header-content {
+  position: absolute;
+  top: 30%;
+  padding: 0px 35px;
+  z-index: 1;
+}
+
+.header-content h1 {
+  font-size: 50px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
