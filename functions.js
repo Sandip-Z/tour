@@ -1,4 +1,8 @@
 const nav = document.querySelector("nav");
+const timeline = document.getElementById("timeline");
+const motivation = document.getElementById("motivation");
+const galleryMenu = document.querySelectorAll(".gallery-menu-list");
+const galleryImages = document.querySelectorAll(".gallery-img");
 window.onscroll = function (e) {
   if (window.pageYOffset > 119) {
     nav.style.backgroundColor = "#363737";
@@ -7,15 +11,13 @@ window.onscroll = function (e) {
     nav.style.backgroundColor = "transparent";
     nav.classList.remove("shadow");
   }
-  //   if (window.pageYOffset >= document.getElementById("timeline").offsetTop) {
-  //     document.getElementById("timeline").style.position = "absolute";
-  //   } else {
-  //     document.getElementById("timeline").style.position = "relative";
-  //   }
+  if (pageYOffset > motivation.offsetTop - 400) {
+    galleryImages.forEach((image) => {
+      image.classList.add("slidein");
+    });
+  }
 };
 
-const galleryMenu = document.querySelectorAll(".gallery-menu-list");
-const galleryImages = document.querySelectorAll(".gallery-img");
 galleryMenu.forEach((list) => {
   list.onclick = (e) => {
     reflectOnGallery(e.target.id);
