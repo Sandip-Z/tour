@@ -171,7 +171,35 @@ header {
 .img-timeline {
   width: 75%;
   overflow: hidden;
-  height: auto;
+  height: 350px;
+  animation: timeline-animation 30s ease-in infinite;
+  background-size: cover;
+  padding: auto 50px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s;
+}
+
+.img-timeline:hover {
+  box-shadow: 0px 1px 6px rgba(15, 15, 15, 0.5);
+  transition: all 0.5s;
+}
+
+.timeline__description {
+  padding: 15px;
+}
+
+.timeline__description::after {
+  animation: timeline-description 30s ease-in infinite;
+  content: "";
+}
+
+.timeline__heading {
+  padding: 15px;
+}
+
+.timeline__heading::after {
+  animation: timeline-heading 30s ease-in infinite;
+  content: "";
 }
 
 #timeline ul li {
@@ -200,5 +228,61 @@ header {
   100% {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+
+@keyframes timeline-animation {
+  0% {
+    background-image: url("images/breakfast.jpeg");
+    /* opacity: 0; */
+  }
+  30% {
+    /* opacity: 0; */
+  }
+  33% {
+    background-image: url("images/donkeys.jpg");
+    /* opacity: 1; */
+  }
+  63% {
+    /* opacity: 0; */
+  }
+  66% {
+    background-image: url("images/rainbow.jpg");
+    /* opacity: 1; */
+  }
+  100% {
+    background-image: url("images/rainbow.jpg");
+  }
+}
+
+@keyframes timeline-description {
+  0% {
+    content: "We take breakfast very early in the morning and gather around to check each others gear and we head out towards the hills.";
+  }
+  33% {
+    content: "The hills welcomes us with cold breeze, no sign of air pollution whatsoever by the way. The ambient sound of birds and waterfall gives the vibe of hans zimmer music honestly.";
+  }
+  66% {
+    content: "The route on its own is a pleasure in itself but the sightseeing on the desitination will make your jaw drop! Ever seen sun rise so gorgeous you forgot to click a photo? you will. and dont worry we have you covered in photo department";
+  }
+  100% {
+    content: "The route on its own is a pleasure in itself but the sightseeing on the desitination will make your jaw drop! Ever seen sun rise so gorgeous you forgot to click a photo? you will. and dont worry we have you covered in photo department";
+  }
+}
+
+@keyframes timeline-heading {
+  0% {
+    content: "Breakfast.";
+  }
+  33% {
+    content: "Trek.";
+  }
+
+  66% {
+    content: "SightSeeing";
+  }
+
+  100% {
+    content: "SightSeeing";
   }
 }

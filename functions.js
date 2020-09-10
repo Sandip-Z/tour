@@ -1,5 +1,6 @@
 const nav = document.querySelector("nav");
 const timeline = document.getElementById("timeline");
+const timelineRow = document.querySelector("#timeline.row");
 const motivation = document.getElementById("motivation");
 const galleryMenu = document.querySelectorAll(".gallery-menu-list");
 const galleryImages = document.querySelectorAll(".gallery-img");
